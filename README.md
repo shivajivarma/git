@@ -23,3 +23,8 @@ git config --global credential.helper cache
 ```bash
 git config --global credential.helper wincred
 ```
+
+## Revert local commit without lossing changes
+```bash
+git reset --soft HEAD~1
+```
