@@ -28,3 +28,5 @@ git config --global credential.helper wincred
 ```bash
 git reset --soft HEAD~1
 ```
+## Delete local GIT branches that were deleted on remote repository (you can use a capital “D” instead of “d” to force delete)
+git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs git branch -d
