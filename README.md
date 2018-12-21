@@ -30,6 +30,7 @@ git reset --soft HEAD~1
 ```
 ## Delete local GIT branches that were deleted on remote repository
 ```bash
+git fetch --all
 git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs git branch -d
 ```
 
