@@ -35,3 +35,6 @@ git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }' | xargs git
 ```
 
 __Note: You can use a capital “D” instead of “d” to force delete__
+
+## Git checkout file from specific branch or commit
+git checkout origin/master -- src\folder\file-name.js
